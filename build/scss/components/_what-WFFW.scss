@@ -1,0 +1,24 @@
+.what-WFFW {
+  padding: 50px 0 70px 0;
+}
+
+.what-WFFW__container {
+  @extend .container;
+}
+
+.what-WFFW__title {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+.what-WFFW__box {
+  p {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+}

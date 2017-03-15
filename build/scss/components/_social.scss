@@ -1,0 +1,254 @@
+.social {
+  background-color: #fcfcfc;
+  padding: 50px 0 80px 0;
+  font-family: 'Open Sans';
+}
+
+.social__container {
+  @extend .container;
+}
+
+.sociasl__title {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+.social__box {
+  margin: 25px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  align-items: flex-start;
+}
+
+.social__column-1 {
+  position: relative;
+  width: 39%;
+  padding: 15px;
+  background-image: url(../img/bg__social.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 0;
+  border-radius: 4px;
+  transition: 0.3s;
+    &:hover , &:active , &:focus  {
+      transform: scale(1.05);
+    }
+  a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $ac-color;
+    opacity: 0.7;
+    border-radius: 4px;
+  }
+}
+
+.social__column-1-box {
+  position: relative;
+  z-index: 1;
+
+}
+
+.social__column-1-promo {
+  font-family: Roboto,sans-serif;
+  text-align: right;
+  color: #fff;
+}
+
+.social__column-1-promo-number {
+  font-size: 72px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.social__column-1-promo-text {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  opacity: 0.3;
+}
+
+.social__column-1_description__title {
+  h3 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.social__column-1_description_icon {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.social__column-1_description__text {
+  margin: 10px 0 0 0;
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 300;
+  }
+}
+
+.social__column-2 {
+  width: 30%;
+  color: #000;
+  a {
+    display: block;
+    text-decoration: none;
+      color: #000;
+  }
+}
+
+.social__column-2__item {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 12px 15px;
+  margin: 0 0 20px 0;
+  font-size: 13px;
+  min-height: 112px;
+  transition: 0.3s;
+    &:hover , &:active , &:focus  {
+      transform: scale(1.05);
+    }
+}
+
+.social__column-3 {
+  width: 22%;
+  color: #000;
+  a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+}
+
+.social__column-2__item__title {
+  h3 {
+    color: $m-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      margin: 3px 0 0 0;
+    }
+    i {
+      color: #086fc8;
+      font-size: 24px;
+      margin: 0 10px 0 0 ;
+      line-height: 1;
+    }
+  }
+}
+
+.social__column-2__item__text {
+  p {
+    margin: 10px 0 0 0;;
+    padding: 0 0 0 35px;
+    color: #000;
+  }
+}
+
+.social__column-2__item_1 {
+  background-image: url(../img/social__bg-vk.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+
+.social__column-2__item_2 {
+  background-image: url(../img/social__bg-fb.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  .social__column-2__item__title {
+    h3 {
+      i {
+        color: #003e8e;
+      }
+    }
+  }
+}
+
+.social__column-3__item {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px #ccc;
+  padding: 12px 15px;
+  margin: 0 0 20px 0;
+  font-size: 13px;
+  min-height: 112px;
+  transition: 0.3s;
+    &:hover , &:active , &:focus  {
+      transform: scale(1.05);
+    }
+}
+
+.social__column-3__item__title {
+  h3 {
+    color: $m-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    span {
+      display: inline-block;
+      vertical-align: top;
+      margin: 3px 0 0 0;
+    }
+
+    i {
+      color: #086fc8;
+      font-size: 24px;
+      margin: 0 10px 0 0 ;
+      line-height: 1;
+    }
+  }
+}
+
+.social__column-3__item__text {
+  p {
+    margin: 10px 0 0 0;;
+    padding: 0 0 0 35px;
+    color: #000;
+  }
+}
+
+.social__column-3__item_1 {
+  background-image: url(../img/social__bg-yt.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  .social__column-3__item__title {
+    h3 {
+      i {
+        color: #f11f11;
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.social__column-3__item_2 {
+  background-image: url(../img/social__bg-tw.png);
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  .social__column-3__item__title {
+    h3 {
+      i {
+        color: #00aaff;
+
+      }
+    }
+  }
+}

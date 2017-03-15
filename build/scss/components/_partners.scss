@@ -1,0 +1,91 @@
+.partners {
+  color: #fff;
+  background-color: #000;
+  padding: 50px 0;
+}
+
+.partners__container {
+  @extend .container;
+}
+
+.partners__box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.partners__item {
+  width: 16%;
+}
+
+.partners__item__img {
+  position: relative;
+  min-height: 55px;
+  width: 120px;
+  margin: 0 auto;
+  transition: 0.3s;
+    &:hover , &:active , &:focus  {
+      transform: scale(1.1);
+    }
+
+  img {
+    display: inline-block;
+    padding: 10px 0 0 0;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 41px;
+    background-image: url(../img/partners__wings-l.png);
+    top: 5px;
+    left: 0
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 41px;
+    background-image: url(../img/partners__wings-r.png);
+    top: 5px;
+    right: 0
+  }
+
+  span {
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    font-size: 24px;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #ffc600;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      background-color: #ffc600;
+      bottom    : 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.partners__item__text {
+  p {
+    font-size: 13px;
+    color: $f-color;
+  }
+}
